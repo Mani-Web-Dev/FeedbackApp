@@ -169,9 +169,11 @@ input:focus {
 }
 
 .btn:disabled {
-    background-color: #cccccc;
-    color: #333;
-    cursor: auto;
+    opacity: 0.5;
+    color: #a8a8a8;
+    background: gainsboro;
+    pointer-events: none;
+    cursor: not-allowed
 }
 
 .btn:disabled:hover {
@@ -190,6 +192,10 @@ input:focus {
 .about-link {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 21px;
 }
 
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
